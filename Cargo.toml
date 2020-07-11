@@ -1,0 +1,19 @@
+[package]
+name = "futures-io-traits-sync-wrapper"
+version = "0.1.0"
+authors = ["vkill <vkill.net@gmail.com>"]
+edition = "2018"
+description = "futures::io::Traits(AsyncBufRead, AsyncRead, AsyncSeek and AsyncWrite) sync wrapper"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/vkill/futures-io-traits-sync-wrapper"
+homepage = "https://github.com/vkill/futures-io-traits-sync-wrapper"
+documentation = "https://docs.rs/futures-io-traits-sync-wrapper"
+keywords = ["wrapper"]
+categories = []
+readme = "README.md"
+
+[dependencies]
+futures-util = { version = "0.3", default-features = false, features = ["io"] }
+
+[dev-dependencies]
+futures-executor = { version = "0.3", default-features = false, features = ["default"] }
